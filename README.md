@@ -19,6 +19,7 @@ the save button to store it on the server
 
 -To view an existing note, click on the note in the left hand column and it will appear on the right side.
 
+<img width="1261" alt="Note Taker" src="https://user-images.githubusercontent.com/98509170/164878483-8e2f855e-2693-4fd9-b011-da21d56069f4.png">
 
 
 ## Credits
