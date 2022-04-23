@@ -26,9 +26,19 @@ function createNewNote(body, notesArray) {
     return note;
 }
 
+function findById(id, notesArray) {
+    const result = notesArray.filter(note => note.id === id)[0];
+    return result;
+  }
+
 app.get('/api/notes', (req, res) => {
     res.json(notes);
 })
+
+app.get('/api/notes/:id', (req, res) => {
+    const result = findById(req.params.id, notes);
+      res.json(result);
+  });
 
 app.post('/api/notes', (req, res) => {
     // req.body is where our incoming content will be
